@@ -73,7 +73,7 @@ module.exports = {
           href: "start.js",
           params: {
             install: "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U python-mecab-ko",
-            run: "python app.py KO"
+            run: "python app.py KR"
           }
         }, {
           icon: "fa-solid fa-power-off",
@@ -88,7 +88,7 @@ module.exports = {
           text: "Update",
           href: "update.js",
         }, {
-          icon: "fa-solid fa-plug",
+          icon: "fa-solid fa-rotate",
           text: "Install",
           href: "install.js",
         }, {

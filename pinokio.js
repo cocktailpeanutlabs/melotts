@@ -72,7 +72,7 @@ module.exports = {
           text: "Korean",
           href: "start.js",
           params: {
-            install: "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U python-mecab-ko",
+            install: "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U python-mecab-ko eunjeon",
             run: "python app.py KR"
           }
         }, {

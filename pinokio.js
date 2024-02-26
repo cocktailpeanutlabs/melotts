@@ -74,9 +74,9 @@ module.exports = {
           params: {
             install: (() => {
               if (kernel.platform === "win32") {
-                return "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U eunjeon",
+                return "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U eunjeon"
               } else {
-                return "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U python-mecab-ko",
+                return "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U python-mecab-ko"
               }
             })(),
             run: "python app.py KR"

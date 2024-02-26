@@ -72,7 +72,13 @@ module.exports = {
           text: "Korean",
           href: "start.js",
           params: {
-            install: "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U python-mecab-ko eunjeon",
+            install: (() => {
+              if (kernel.platform === "win32") {
+                return "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U eunjeon",
+              } else {
+                return "pip uninstall -y mecab-python3 python-mecab-ko && pip install -U python-mecab-ko",
+              }
+            })(),
             run: "python app.py KR"
           }
         }, {

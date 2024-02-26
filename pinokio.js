@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: "1.1",
+  version: "1.2",
   title: "MeloTTS",
   description: "High-quality multi-lingual text-to-speech library by MyShell.ai. Support English, Spanish, French, Chinese, Japanese and Korean https://github.com/myshell-ai/MeloTTS",
   icon: "icon.png",
